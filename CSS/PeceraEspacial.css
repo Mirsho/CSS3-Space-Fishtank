@@ -1,0 +1,103 @@
+body {
+	background-image: url(../imagenes/FondoLuna.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	overflow: hidden;
+}
+
+div#todo{
+	--border: 5px solid white;
+}
+
+img.camara {
+	width: 60%;
+	height: 60%;
+	position: absolute;
+	margin-left: 48em;
+	margin-top: 8em;
+	z-index: 100;
+}
+
+div#astropecera {
+	--border: 5px solid red;
+	width: 50%;
+	position: relative;
+	margin-left: 55em;
+	margin-top: 10em;
+}
+
+img.astronauta {
+	height: 130%;
+	position: relative;
+	z-index: 50;
+}
+
+img.pez {
+	width: 8%;
+	position: relative;
+	bottom: 53em;
+	left: 35em;
+	z-index: 60;
+	animation-duration: 3s;   
+	animation-name: nadar;
+	animation-iteration-count: infinite;
+}
+
+@keyframes nadar {
+	from {
+	bottom: 53em;
+	left: 35em;   
+	-webkit-transform:rotatey(0deg);
+	}
+	45%{
+		left: 27em; 
+		-webkit-transform:rotatey(0deg);
+	}
+	60%{
+		bottom: 52em;
+		left: 27em; 
+		-webkit-transform:rotatey(180deg);
+	}
+    to {
+	bottom: 53em;
+	left: 35em; 
+	-webkit-transform:rotatey(180deg);	
+	}
+  }
+
+div#fullmeteorito {
+	--border: 5px solid purple;
+	height: 30%;
+	width: 20%;
+	position: absolute;
+	top: 1em;
+	left: 50em;
+}
+
+img.meteorito {
+	width: 80%;
+	position: absolute;
+	z-index: 30;
+	animation-name: meteorito;
+}
+
+@keyframes meteorito {
+	from {  
+
+	}
+	30%{
+
+	}
+	70%{
+
+	}
+    to {
+	
+	}
+  }
+ 
+img.restos {
+	width: 60%;
+	position: absolute;
+	z-index: 40;
+}
